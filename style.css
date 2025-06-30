@@ -1,0 +1,218 @@
+:root {
+  --bg_grn: #132a13;
+  --grn1: #31572c;
+  --grn2: #4f772d;
+  --light_grn: #90a955;
+  --glw_grn: #ecf39e57;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg_grn);
+  min-height: 100vh;
+}
+
+.main_container {
+  width: 30%;
+  margin: 4rem auto;
+  background-color: white;
+  border-radius: 5%;
+}
+.main_container:hover {
+  animation: animate-bg-shdw 2s linear infinite;
+  img {
+    animation: animate-icn-bdr 0.3s linear;
+    outline: 0.7rem solid var(--light_grn);
+    border: 0.6rem solid var(--grn1);
+  }
+  .btn {
+    outline: 0.2rem solid var(--grn1);
+    outline-offset: 1px;
+  }
+}
+@keyframes animate-icn-bdr {
+  0% {
+    outline: 0.7rem solid var(--light_grn);
+    border: 0rem solid var(--grn1);
+  }
+  33% {
+    outline: 0.7rem solid var(--light_grn);
+    border: 0.5rem solid var(--grn1);
+  }
+  66% {
+    outline: 0.7rem solid var(--light_grn);
+    border: 1rem solid var(--grn1);
+  }
+}
+@keyframes animate-bg-shdw {
+  0% {
+    box-shadow: 0 0 4rem 0rem var(--glw_grn);
+  }
+
+  25% {
+    box-shadow: 0 0 3rem 0rem var(--glw_grn);
+  }
+  50% {
+    box-shadow: 0 0 2rem 0rem var(--glw_grn);
+  }
+  75% {
+    box-shadow: 0 0 3rem 0rem var(--glw_grn);
+  }
+  100% {
+    box-shadow: 0 0 4rem 0rem var(--glw_grn);
+  }
+}
+.holder {
+  width: 100%;
+  color: var(--bg_grn);
+}
+.profile {
+  background-color: var(--grn2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 14rem;
+  overflow: visible;
+}
+
+img {
+  width: 14rem;
+  outline: 0.5rem solid var(--grn2);
+  border-radius: 50%;
+  position: absolute;
+  top: 5rem;
+}
+
+.desc {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .job {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .quote {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--grn2);
+  color: white;
+  margin: 1rem 0;
+}
+.btnhld {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 1rem 0;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul li {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+  a {
+    text-decoration-line: none;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid;
+    border-radius: 50%;
+    margin: 0 2rem;
+  }
+}
+.fa-youtube {
+  background-color: white;
+  color: red;
+}
+.fa-facebook {
+  background-color: white;
+  color: navy;
+}
+.fa-instagram {
+  background-color: white;
+  color: rgb(253, 62, 126);
+}
+.fa-x-twitter {
+  background-color: black;
+  color: white;
+  outline: 0.5px solid black;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-top: 0.1rem solid rgb(161, 161, 161);
+
+  .cnt {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .cntele {
+    font-size: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faicon {
+    font-size: 2rem;
+    width: 50%;
+    margin: 0;
+  }
+  hr {
+    height: 3rem;
+
+    border: 0.1rem solid rgb(161, 161, 161);
+  }
+}
+
+.count .fa-heart:hover {
+  color: rgb(253, 62, 126);
+}
+.count .fa-message:hover {
+  color: var(--light_grn);
+}
+.count .fa-share:hover {
+  color: rgb(0, 157, 255);
+}
